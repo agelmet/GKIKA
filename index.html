@@ -7,14 +7,14 @@
 <link rel="icon" type="image/png" href="https://github.com/agelmet/GKIKA/blob/main/LOGO_AMANDA.png?raw=true">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500&family=DM+Sans:ital,wght@0,200;0,300;0,400;0,500;0,600;1,300;1,400&family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400&family=Playfair+Display:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500&family=DM+Sans:ital,wght@0,200;0,300;0,400;0,500;0,600;1,300;1,400&family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
 <style>
 :root {
-    --cream: #fff2e9;
+    --cream: #fdf5f0;
     --terracotta: #d58874;
     --rose: #d5736e;
     --gold: #fbc182;
-    --blush: #fcb3b3;
+    --blush: #f0d5cc;
     --champagne: #d3b97d;
     --sand: #e8d1ad;
     --deep: #3a2e2a;
@@ -66,13 +66,13 @@ body { font-family: 'DM Sans', sans-serif; color: var(--text); background: var(-
 
 /* HERO */
 .hero { min-height: 100vh; display: flex; align-items: center; justify-content: center; text-align: center; position: relative; overflow: hidden; background: var(--cream); }
-.hero-mesh { position: absolute; inset: 0; background: radial-gradient(ellipse 80% 50% at 20% 80%, rgba(252, 179, 179, 0.3) 0%, transparent 50%), radial-gradient(ellipse 60% 80% at 80% 20%, rgba(251, 193, 130, 0.25) 0%, transparent 50%), radial-gradient(ellipse 70% 60% at 50% 50%, rgba(232, 209, 173, 0.2) 0%, transparent 50%); animation: meshS 20s ease-in-out infinite; }
+.hero-mesh { position: absolute; inset: 0; background: radial-gradient(ellipse 80% 50% at 20% 80%, rgba(232, 209, 173, 0.2) 0%, transparent 50%), radial-gradient(ellipse 60% 80% at 80% 20%, rgba(251, 193, 130, 0.18) 0%, transparent 50%), radial-gradient(ellipse 70% 60% at 50% 50%, rgba(232, 209, 173, 0.15) 0%, transparent 50%); animation: meshS 20s ease-in-out infinite; }
 @keyframes meshS { 0%, 100% { filter: hue-rotate(0deg); transform: scale(1); } 50% { filter: hue-rotate(5deg); transform: scale(1.05); } }
 .hero-particles { position: absolute; inset: 0; overflow: hidden; }
 .particle { position: absolute; border-radius: 50%; opacity: 0; animation: pFloat linear infinite; }
 @keyframes pFloat { 0% { transform: translateY(100vh) rotate(0deg); opacity: 0; } 10% { opacity: 1; } 90% { opacity: 1; } 100% { transform: translateY(-10vh) rotate(360deg); opacity: 0; } }
 .hero-orb { position: absolute; border-radius: 50%; filter: blur(60px); }
-.hero-orb.o1 { width: 400px; height: 400px; background: var(--blush); top: -15%; right: -8%; opacity: 0.3; animation: od1 16s ease-in-out infinite; }
+.hero-orb.o1 { width: 400px; height: 400px; background: var(--sand); top: -15%; right: -8%; opacity: 0.2; animation: od1 16s ease-in-out infinite; }
 .hero-orb.o2 { width: 300px; height: 300px; background: var(--sand); bottom: -12%; left: -6%; opacity: 0.25; animation: od2 18s ease-in-out infinite; }
 .hero-orb.o3 { width: 200px; height: 200px; background: var(--gold); top: 50%; left: 60%; opacity: 0.15; animation: od3 14s ease-in-out infinite; }
 .hero-orb.o4 { width: 160px; height: 160px; background: var(--terracotta); top: 20%; left: 15%; opacity: 0.1; animation: od4 20s ease-in-out infinite; }
@@ -94,9 +94,9 @@ body { font-family: 'DM Sans', sans-serif; color: var(--text); background: var(-
 @keyframes dA { to { opacity: 0.25; } }
 @keyframes dFloat { 0%, 100% { transform: rotate(45deg) translate(0, 0); } 50% { transform: rotate(45deg) translate(8px, -12px); } }
 .hero-content { position: relative; z-index: 2; padding: 0 24px; max-width: 820px; }
-.hero-tag { font-size: 0.7rem; font-weight: 500; letter-spacing: 0.35em; text-transform: uppercase; color: var(--terracotta); margin-bottom: 28px; opacity: 0; transform: translateY(20px); animation: hF 1s ease 0.4s forwards; }
-.hero-title { font-family: 'Playfair Display', serif; font-size: clamp(3rem, 7vw, 5.5rem); font-weight: 300; line-height: 1.05; color: var(--deep); margin-bottom: 20px; opacity: 0; transform: translateY(40px); animation: hF 1.2s ease 0.6s forwards; }
-.hero-title em { font-style: italic; font-weight: 300; color: var(--terracotta); }
+.hero-tag { font-size: 0.88rem; font-weight: 500; letter-spacing: 0.3em; text-transform: uppercase; color: var(--terracotta); margin-bottom: 28px; opacity: 0; transform: translateY(20px); animation: hF 1s ease 0.4s forwards; }
+.hero-title { font-family: 'Cormorant Garamond', serif; font-size: clamp(3rem, 7vw, 5.5rem); font-weight: 300; line-height: 1.05; color: var(--deep); margin-bottom: 20px; opacity: 0; transform: translateY(40px); animation: hF 1.2s ease 0.6s forwards; }
+.hero-title em { font-style: normal; font-weight: 300; color: var(--deep); }
 .hero-sub { font-family: 'Libre Baskerville', serif; font-size: clamp(1rem, 1.8vw, 1.25rem); font-weight: 400; font-style: italic; color: var(--rose); margin-bottom: 36px; opacity: 0; transform: translateY(20px); animation: hF 1s ease 0.9s forwards; }
 .hero-divider { display: flex; align-items: center; justify-content: center; gap: 16px; margin-bottom: 36px; opacity: 0; animation: hF 1s ease 1.1s forwards; }
 .hero-divider .line { width: 50px; height: 1px; background: var(--terracotta); opacity: 0.4; }
@@ -304,10 +304,10 @@ section { padding: clamp(80px, 10vw, 140px) clamp(24px, 5vw, 80px); }
     <a href="#hero" class="nav-logo"><img src="https://github.com/agelmet/GKIKA/blob/main/LOGO_AMANDA.png?raw=true" alt="Logo"></a>
     <div class="nav-right">
         <ul class="nav-links">
-            <li><a href="#about" data-el="about-link">&#931;&#967;&#949;&#964;&#953;&#954;&#940;</a></li>
+            <li><a href="#about" data-el="about-link">&#931;&#967;&#949;&#964;&#953;&#954;&#940; &#956;&#949; &#917;&#956;&#941;&#957;&#945;</a></li>
             <li><a href="#services" data-el="services-link">&#933;&#960;&#951;&#961;&#949;&#963;&#943;&#949;&#962;</a></li>
             <li><a href="#approaches" data-el="approaches-link">&#928;&#961;&#959;&#963;&#941;&#947;&#947;&#953;&#963;&#951;</a></li>
-            <li><a href="#difficulties" data-el="difficulties-link">&#916;&#965;&#963;&#954;&#959;&#955;&#943;&#949;&#962;</a></li>
+            <li><a href="#difficulties" data-el="difficulties-link">&#917;&#958;&#949;&#953;&#948;&#943;&#954;&#949;&#965;&#963;&#951;</a></li>
             <li><a href="#reviews" data-el="reviews-link">&#917;&#956;&#960;&#949;&#953;&#961;&#943;&#949;&#962;</a></li>
             <li><a href="#contact" class="nav-cta" data-el="cta-link">&#929;&#945;&#957;&#964;&#949;&#946;&#959;&#973;</a></li>
         </ul>
@@ -317,10 +317,10 @@ section { padding: clamp(80px, 10vw, 140px) clamp(24px, 5vw, 80px); }
 </nav>
 
 <div class="mobile-menu" id="mobileMenu">
-    <a href="#about" onclick="toggleMenu()" data-el="m-about">&#931;&#967;&#949;&#964;&#953;&#954;&#940;</a>
+    <a href="#about" onclick="toggleMenu()" data-el="m-about">&#931;&#967;&#949;&#964;&#953;&#954;&#940; &#956;&#949; &#917;&#956;&#941;&#957;&#945;</a>
     <a href="#services" onclick="toggleMenu()" data-el="m-services">&#933;&#960;&#951;&#961;&#949;&#963;&#943;&#949;&#962;</a>
     <a href="#approaches" onclick="toggleMenu()" data-el="m-approaches">&#928;&#961;&#959;&#963;&#941;&#947;&#947;&#953;&#963;&#951;</a>
-    <a href="#difficulties" onclick="toggleMenu()" data-el="m-difficulties">&#916;&#965;&#963;&#954;&#959;&#955;&#943;&#949;&#962;</a>
+    <a href="#difficulties" onclick="toggleMenu()" data-el="m-difficulties">&#917;&#958;&#949;&#953;&#948;&#943;&#954;&#949;&#965;&#963;&#951;</a>
     <a href="#reviews" onclick="toggleMenu()" data-el="m-reviews">&#917;&#956;&#960;&#949;&#953;&#961;&#943;&#949;&#962;</a>
     <a href="#contact" onclick="toggleMenu()" style="color:var(--terracotta)" data-el="m-cta">&#922;&#955;&#949;&#943;&#963;&#964;&#949; &#929;&#945;&#957;&#964;&#949;&#946;&#959;&#973;</a>
     <button class="mobile-lang-btn" onclick="toggleLang();toggleMenu();" id="mobileLangBtn">EN</button>
@@ -334,10 +334,11 @@ section { padding: clamp(80px, 10vw, 140px) clamp(24px, 5vw, 80px); }
     <div class="hero-diamond d1"></div><div class="hero-diamond d2"></div><div class="hero-diamond d3"></div>
     <div class="hero-content">
         <div class="hero-tag" data-el="hero-tag">&#922;&#955;&#953;&#957;&#953;&#954;&#942; &#936;&#965;&#967;&#959;&#955;&#972;&#947;&#959;&#962; &middot; &#936;&#965;&#967;&#959;&#952;&#949;&#961;&#945;&#960;&#949;&#973;&#964;&#961;&#953;&#945;</div>
-        <h1 class="hero-title" style="font-family:'Playfair Display',serif">&#913;&#948;&#945;&#956;&#945;&#957;&#964;&#943;&#945; <em>&#915;&#954;&#943;&#954;&#945;</em></h1>
-        <p class="hero-sub" style="font-family:'Libre Baskerville',serif" data-el="hero-sub">&#927; &#948;&#961;&#972;&#956;&#959;&#962; &#960;&#961;&#959;&#962; &#964;&#951;&#957; &#945;&#965;&#964;&#959;&#947;&#957;&#969;&#963;&#943;&#945; &#958;&#949;&#954;&#953;&#957;&#940; &#956;&#949; &#941;&#957;&#945; &#960;&#961;&#974;&#964;&#959; &#946;&#942;&#956;&#945;</p>
+        <h1 class="hero-title" style="font-family:'Cormorant Garamond',serif">&#913;&#948;&#945;&#956;&#945;&#957;&#964;&#943;&#945; <em>&#915;&#954;&#943;&#954;&#945;</em></h1>
+        <p class="hero-sub" style="font-family:'Libre Baskerville',serif" data-el="hero-sub">&laquo;&#908;&#964;&#945;&#957; &#954;&#945;&#964;&#945;&#957;&#959;&#959;&#973;&#956;&#949; &#964;&#945; &#956;&#959;&#964;&#943;&#946;&#945; &#960;&#959;&#965; &#949;&#960;&#945;&#957;&#945;&#955;&#945;&#956;&#946;&#940;&#957;&#959;&#957;&#964;&#945;&#953;, &#945;&#957;&#959;&#943;&#947;&#949;&#964;&#945;&#953; &#959; &#948;&#961;&#972;&#956;&#959;&#962; &#947;&#953;&#945; &#959;&#965;&#963;&#953;&#945;&#963;&#964;&#953;&#954;&#942; &#945;&#955;&#955;&#945;&#947;&#942;.&raquo;</p>
         <div class="hero-divider"><div class="line"></div><div class="dot"></div><div class="line"></div></div>
-        <p class="hero-desc" data-el="hero-desc">&#904;&#957;&#945;&#962; &#945;&#963;&#966;&#945;&#955;&#942;&#962; &#967;&#974;&#961;&#959;&#962; &#954;&#945;&#964;&#945;&#957;&#972;&#951;&#963;&#951;&#962;, &#949;&#956;&#960;&#953;&#963;&#964;&#959;&#963;&#973;&#957;&#951;&#962; &#954;&#945;&#953; &#959;&#965;&#963;&#953;&#945;&#963;&#964;&#953;&#954;&#942;&#962; &#945;&#955;&#955;&#945;&#947;&#942;&#962;. &#914;&#945;&#963;&#953;&#963;&#956;&#941;&#957;&#951; &#963;&#964;&#951; &#915;&#957;&#969;&#963;&#953;&#945;&#954;&#942; &#931;&#965;&#956;&#960;&#949;&#961;&#953;&#966;&#959;&#961;&#953;&#954;&#942; &#954;&#945;&#953; &#964;&#951; &#915;&#957;&#969;&#963;&#964;&#953;&#954;&#942; &#913;&#957;&#945;&#955;&#965;&#964;&#953;&#954;&#942; &#936;&#965;&#967;&#959;&#952;&#949;&#961;&#945;&#960;&#949;&#943;&#945;.</p>
+        <p class="hero-desc" data-el="hero-desc">&#904;&#957;&#945;&#962; &#945;&#963;&#966;&#945;&#955;&#942;&#962; &#967;&#974;&#961;&#959;&#962; &#954;&#945;&#964;&#945;&#957;&#972;&#951;&#963;&#951;&#962;, &#949;&#956;&#960;&#953;&#963;&#964;&#959;&#963;&#973;&#957;&#951;&#962; &#954;&#945;&#953; &#945;&#955;&#955;&#945;&#947;&#942;&#962;.</p>
+        <p class="hero-desc" style="margin-top:-28px" data-el="hero-desc2">&#936;&#965;&#967;&#959;&#952;&#949;&#961;&#945;&#960;&#949;&#943;&#945; &#946;&#945;&#963;&#953;&#963;&#956;&#941;&#957;&#951; &#963;&#964;&#951;&#957; &#915;&#957;&#969;&#963;&#953;&#945;&#954;&#942; &#931;&#965;&#956;&#960;&#949;&#961;&#953;&#966;&#959;&#961;&#953;&#954;&#942; &#954;&#945;&#953; &#963;&#964;&#951; &#915;&#957;&#969;&#963;&#964;&#953;&#954;&#942; &#913;&#957;&#945;&#955;&#965;&#964;&#953;&#954;&#942; &#928;&#961;&#959;&#963;&#941;&#947;&#947;&#953;&#963;&#951;.</p>
         <div class="hero-btns">
             <a href="#contact" class="btn-primary" data-el="hero-btn1">&#922;&#955;&#949;&#943;&#963;&#964;&#949; &#929;&#945;&#957;&#964;&#949;&#946;&#959;&#973;</a>
             <a href="#about" class="btn-secondary" data-el="hero-btn2">&#915;&#957;&#969;&#961;&#943;&#963;&#964;&#949; &#924;&#949;</a>
@@ -465,8 +466,8 @@ section { padding: clamp(80px, 10vw, 140px) clamp(24px, 5vw, 80px); }
         <div class="strengths-grid">
             <div class="strength-item reveal"><div class="strength-num-wrap"><div class="strength-num" style="font-family:'Playfair Display',serif">01</div><div class="strength-num-line"></div></div><h4 style="font-family:'Playfair Display',serif" data-el="st1-h">&#913;&#954;&#945;&#948;&#951;&#956;&#945;&#970;&#954;&#942; &#913;&#961;&#953;&#963;&#964;&#949;&#943;&#945;</h4><p data-el="st1-p">&#927;&#953; &#956;&#949;&#964;&#945;&#960;&#964;&#965;&#967;&#953;&#945;&#954;&#941;&#962; &#956;&#959;&#965; &#963;&#960;&#959;&#965;&#948;&#941;&#962; &#963;&#964;&#951;&#957; &#922;&#955;&#953;&#957;&#953;&#954;&#942; &#936;&#965;&#967;&#959;&#955;&#959;&#947;&#943;&#945; &#959;&#955;&#959;&#954;&#955;&#951;&#961;&#974;&#952;&#951;&#954;&#945;&#957; &#956;&#949; &#948;&#953;&#940;&#954;&#961;&#953;&#963;&#951;. &#919; &#960;&#953;&#963;&#964;&#959;&#960;&#959;&#943;&#951;&#963;&#951; &#964;&#959;&#965; &#960;&#964;&#965;&#967;&#943;&#959;&#965; &#956;&#959;&#965; &#945;&#960;&#972; &#964;&#959; New Hampshire &#964;&#969;&#957; &#919;&#928;&#913; &#949;&#960;&#953;&#946;&#949;&#946;&#945;&#953;&#974;&#957;&#949;&#953; &#960;&#969;&#962; &#951; &#949;&#954;&#960;&#945;&#943;&#948;&#949;&#965;&#963;&#942; &#956;&#959;&#965; &#945;&#954;&#959;&#955;&#959;&#965;&#952;&#949;&#943; &#964;&#945; &#960;&#953;&#959; &#963;&#973;&#947;&#967;&#961;&#959;&#957;&#945;, &#948;&#953;&#949;&#952;&#957;&#942; &#945;&#954;&#945;&#948;&#951;&#956;&#945;&#970;&#954;&#940; &#960;&#961;&#972;&#964;&#965;&#960;&#945;.</p></div>
             <div class="strength-item reveal reveal-d1"><div class="strength-num-wrap"><div class="strength-num" style="font-family:'Playfair Display',serif">02</div><div class="strength-num-line"></div></div><h4 style="font-family:'Playfair Display',serif" data-el="st2-h">&#919; &#916;&#973;&#957;&#945;&#956;&#951; &#964;&#951;&#962; &#931;&#973;&#957;&#952;&#949;&#963;&#951;&#962;</h4><p data-el="st2-p">&#919; &#949;&#958;&#949;&#953;&#948;&#943;&#954;&#949;&#965;&#963;&#942; &#956;&#959;&#965; &#964;&#972;&#963;&#959; &#963;&#964;&#951; &#915;&#957;&#969;&#963;&#953;&#945;&#954;&#942; &#931;&#965;&#956;&#960;&#949;&#961;&#953;&#966;&#959;&#961;&#953;&#954;&#942; (&#960;&#961;&#945;&#954;&#964;&#953;&#954;&#942;, &#960;&#961;&#959;&#963;&#945;&#957;&#945;&#964;&#959;&#955;&#953;&#963;&#956;&#941;&#957;&#951; &#963;&#964;&#959; &#960;&#945;&#961;&#972;&#957;) &#972;&#963;&#959; &#954;&#945;&#953; &#963;&#964;&#951; &#915;&#957;&#969;&#963;&#964;&#953;&#954;&#942; &#913;&#957;&#945;&#955;&#965;&#964;&#953;&#954;&#942; (&#960;&#959;&#965; &#949;&#963;&#964;&#953;&#940;&#950;&#949;&#953; &#963;&#964;&#945; &#946;&#945;&#952;&#973;&#964;&#949;&#961;&#945; &#963;&#967;&#949;&#963;&#953;&#945;&#954;&#940; &#956;&#959;&#964;&#943;&#946;&#945;), &#956;&#959;&#965; &#960;&#961;&#959;&#963;&#966;&#941;&#961;&#949;&#953; &#956;&#953;&#945; &#964;&#949;&#961;&#940;&#963;&#964;&#953;&#945; &#949;&#961;&#947;&#945;&#955;&#949;&#953;&#959;&#952;&#942;&#954;&#951; &#947;&#953;&#945; &#957;&#945; &#945;&#957;&#964;&#945;&#960;&#959;&#954;&#961;&#953;&#952;&#974; &#945;&#954;&#961;&#953;&#946;&#974;&#962; &#963;&#949; &#945;&#965;&#964;&#972; &#960;&#959;&#965; &#941;&#967;&#949;&#964;&#949; &#945;&#957;&#940;&#947;&#954;&#951;.</p></div>
-            <div class="strength-item reveal reveal-d2"><div class="strength-num-wrap"><div class="strength-num" style="font-family:'Playfair Display',serif">03</div><div class="strength-num-line"></div></div><h4 style="font-family:'Playfair Display',serif" data-el="st3-h">&#922;&#955;&#953;&#957;&#953;&#954;&#942; &#917;&#956;&#960;&#949;&#953;&#961;&#943;&#945; &#928;&#961;&#974;&#964;&#951;&#962; &#915;&#961;&#945;&#956;&#956;&#942;&#962;</h4><p data-el="st3-p">&#919; &#952;&#951;&#964;&#949;&#943;&#945; &#956;&#959;&#965; &#963;&#964;&#959; &#932;&#950;&#940;&#957;&#949;&#953;&#959; &#925;&#959;&#963;&#959;&#954;&#959;&#956;&#949;&#943;&#959; &#954;&#945;&#953; &#963;&#964;&#959; &#917;&#955;&#955;&#951;&#957;&#953;&#954;&#972; &#922;&#941;&#957;&#964;&#961;&#959; &#936;&#965;&#967;&#953;&#954;&#942;&#962; &#933;&#947;&#953;&#949;&#953;&#957;&#942;&#962; (&#917;.&#922;.&#917;.&#936;.&#933;.&#917;.) &#956;&#949; &#941;&#966;&#949;&#961;&#949; &#945;&#957;&#964;&#953;&#956;&#941;&#964;&#969;&#960;&#951; &#956;&#949; &#972;&#955;&#959; &#964;&#959; &#966;&#940;&#963;&#956;&#945; &#964;&#951;&#962; &#968;&#965;&#967;&#959;&#960;&#945;&#952;&#959;&#955;&#959;&#947;&#943;&#945;&#962;, &#967;&#964;&#943;&#950;&#959;&#957;&#964;&#945;&#962; &#956;&#953;&#945; &#946;&#945;&#952;&#953;&#940; &#954;&#945;&#953; &#945;&#957;&#952;&#949;&#954;&#964;&#953;&#954;&#942; &#954;&#955;&#953;&#957;&#953;&#954;&#942; &#954;&#961;&#943;&#963;&#951;.</p></div>
-            <div class="strength-item reveal reveal-d3"><div class="strength-num-wrap"><div class="strength-num" style="font-family:'Playfair Display',serif">04</div><div class="strength-num-line"></div></div><h4 style="font-family:'Playfair Display',serif" data-el="st4-h">&#913;&#948;&#953;&#945;&#960;&#961;&#945;&#947;&#956;&#940;&#964;&#949;&#965;&#964;&#951; &#916;&#949;&#959;&#957;&#964;&#959;&#955;&#959;&#947;&#943;&#945;</h4><p data-el="st4-p">&#919; &#952;&#949;&#961;&#945;&#960;&#949;&#943;&#945; &#949;&#943;&#957;&#945;&#953; &#953;&#949;&#961;&#942;. &#919; &#960;&#961;&#945;&#954;&#964;&#953;&#954;&#942; &#956;&#959;&#965; &#948;&#953;&#941;&#960;&#949;&#964;&#945;&#953; &#945;&#965;&#963;&#964;&#951;&#961;&#940; &#945;&#960;&#972; &#964;&#959;&#957; &#922;&#974;&#948;&#953;&#954;&#945; &#916;&#949;&#959;&#957;&#964;&#959;&#955;&#959;&#947;&#943;&#945;&#962; &#964;&#969;&#957; &#936;&#965;&#967;&#959;&#955;&#972;&#947;&#969;&#957;, &#948;&#953;&#945;&#963;&#966;&#945;&#955;&#943;&#950;&#959;&#957;&#964;&#945;&#962; &#964;&#959; &#945;&#960;&#972;&#961;&#961;&#951;&#964;&#959;, &#964;&#959;&#957; &#963;&#949;&#946;&#945;&#963;&#956;&#972; &#954;&#945;&#953; &#964;&#951;&#957; &#945;&#963;&#966;&#940;&#955;&#949;&#953;&#945; &#963;&#949; &#954;&#940;&#952;&#949; &#956;&#945;&#962; &#946;&#942;&#956;&#945;.</p></div>
+            <div class="strength-item reveal reveal-d2"><div class="strength-num-wrap"><div class="strength-num" style="font-family:'Playfair Display',serif">03</div><div class="strength-num-line"></div></div><h4 style="font-family:'Playfair Display',serif" data-el="st3-h">&#922;&#955;&#953;&#957;&#953;&#954;&#942; &#917;&#956;&#960;&#949;&#953;&#961;&#943;&#945;</h4><p data-el="st3-p">&#924;&#941;&#963;&#945; &#945;&#960;&#972; &#964;&#951;&#957; &#960;&#961;&#945;&#947;&#956;&#945;&#964;&#959;&#960;&#959;&#943;&#951;&#963;&#951; &#954;&#955;&#953;&#957;&#953;&#954;&#942;&#962; &#960;&#961;&#945;&#954;&#964;&#953;&#954;&#942;&#962; &#963;&#964;&#959; &#932;&#950;&#940;&#957;&#949;&#953;&#959; &#915;&#949;&#957;&#953;&#954;&#972; &#925;&#959;&#963;&#959;&#954;&#959;&#956;&#949;&#943;&#959;, &#964;&#959; &#917;&#955;&#955;&#951;&#957;&#953;&#954;&#972; &#922;&#941;&#957;&#964;&#961;&#959; &#936;&#965;&#967;&#953;&#954;&#942;&#962; &#933;&#947;&#953;&#949;&#953;&#957;&#942;&#962; &amp; &#917;&#961;&#949;&#965;&#957;&#974;&#957; &#954;&#945;&#953; &#964;&#959; Roots Wellness Center &#942;&#961;&#952;&#945; &#963;&#949; &#949;&#960;&#945;&#966;&#942; &#956;&#949; &#941;&#957;&#945; &#949;&#965;&#961;&#973; &#966;&#940;&#963;&#956;&#945; &#968;&#965;&#967;&#959;&#960;&#945;&#952;&#959;&#955;&#959;&#947;&#943;&#945;&#962;, &#949;&#957;&#953;&#963;&#967;&#973;&#959;&#957;&#964;&#945;&#962; &#963;&#951;&#956;&#945;&#957;&#964;&#953;&#954;&#940; &#964;&#951;&#957; &#954;&#955;&#953;&#957;&#953;&#954;&#942; &#956;&#959;&#965; &#954;&#961;&#943;&#963;&#951;.</p></div>
+            <div class="strength-item reveal reveal-d3"><div class="strength-num-wrap"><div class="strength-num" style="font-family:'Playfair Display',serif">04</div><div class="strength-num-line"></div></div><h4 style="font-family:'Playfair Display',serif" data-el="st4-h">&#916;&#949;&#959;&#957;&#964;&#959;&#955;&#959;&#947;&#943;&#945; &#917;&#960;&#945;&#947;&#947;&#941;&#955;&#956;&#945;&#964;&#959;&#962; &#936;&#965;&#967;&#959;&#955;&#972;&#947;&#959;&#965;</h4><p data-el="st4-p">&#919; &#960;&#961;&#945;&#954;&#964;&#953;&#954;&#942; &#956;&#959;&#965; &#948;&#953;&#941;&#960;&#949;&#964;&#945;&#953; &#945;&#965;&#963;&#964;&#951;&#961;&#940; &#945;&#960;&#972; &#964;&#959;&#957; &#922;&#974;&#948;&#953;&#954;&#945; &#916;&#949;&#959;&#957;&#964;&#959;&#955;&#959;&#947;&#943;&#945;&#962; &#964;&#969;&#957; &#936;&#965;&#967;&#959;&#955;&#972;&#947;&#969;&#957;, &#948;&#953;&#945;&#963;&#966;&#945;&#955;&#943;&#950;&#959;&#957;&#964;&#945;&#962; &#964;&#959; &#945;&#960;&#972;&#961;&#961;&#951;&#964;&#959;, &#964;&#959;&#957; &#963;&#949;&#946;&#945;&#963;&#956;&#972; &#954;&#945;&#953; &#964;&#951;&#957; &#945;&#963;&#966;&#940;&#955;&#949;&#953;&#945; &#963;&#949; &#954;&#940;&#952;&#949; &#956;&#945;&#962; &#946;&#942;&#956;&#945;.</p></div>
         </div>
     </div>
 </section>
@@ -506,7 +507,7 @@ section { padding: clamp(80px, 10vw, 140px) clamp(24px, 5vw, 80px); }
             <a href="#contact" class="btn-primary" style="margin-bottom:36px;display:inline-flex" data-el="con-btn">&#922;&#955;&#949;&#943;&#963;&#964;&#949; &#929;&#945;&#957;&#964;&#949;&#946;&#959;&#973;</a>
             <ul class="contact-info">
                 <li><svg viewBox="0 0 24 24"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path><circle cx="12" cy="10" r="3"></circle></svg><span>&#922;&#945;&#954;&#945;&#955;&#949;&#964;&#961;&#943;&#959;&#965; 8, &#928;&#949;&#964;&#961;&#959;&#973;&#960;&#959;&#955;&#951;, &#913;&#964;&#964;&#953;&#954;&#942;</span></li>
-                <li><svg viewBox="0 0 24 24"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path></svg><a href="tel:+306980611974">698 061 1974</a></li>
+                <li><svg viewBox="0 0 24 24"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path></svg><a href="tel:+306978793081">697 879 3081</a></li>
                 <li><svg viewBox="0 0 24 24"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path><polyline points="22,6 12,13 2,6"></polyline></svg><a href="mailto:gkika.psy@gmail.com">gkika.psy@gmail.com</a></li>
             </ul>
         </div>
@@ -603,21 +604,22 @@ document.addEventListener('keydown', function(e) { if (e.key === 'Escape') close
 // TRANSLATION
 var currentLang = 'el';
 var translations = {
-    "about-link":{en:"About"},
+    "about-link":{en:"About Me"},
     "services-link":{en:"Services"},
     "approaches-link":{en:"Approach"},
-    "difficulties-link":{en:"Specializations"},
+    "difficulties-link":{en:"Specialization"},
     "reviews-link":{en:"Reviews"},
     "cta-link":{en:"Appointment"},
-    "m-about":{en:"About"},
+    "m-about":{en:"About Me"},
     "m-services":{en:"Services"},
     "m-approaches":{en:"Approach"},
-    "m-difficulties":{en:"Specializations"},
+    "m-difficulties":{en:"Specialization"},
     "m-reviews":{en:"Reviews"},
     "m-cta":{en:"Book Appointment"},
     "hero-tag":{en:"Clinical Psychologist \u00B7 Psychotherapist"},
-    "hero-sub":{en:"The path to self-awareness begins with a single step"},
-    "hero-desc":{en:"A safe space for understanding, trust, and meaningful change. Grounded in Cognitive Behavioral and Cognitive Analytic Psychotherapy."},
+    "hero-sub":{en:"\u00ABWhen we understand the patterns that repeat, the path to meaningful change opens up.\u00BB"},
+    "hero-desc":{en:"A safe space for understanding, trust, and change."},
+    "hero-desc2":{en:"Psychotherapy grounded in Cognitive Behavioral and Cognitive Analytic Approach."},
     "hero-btn1":{en:"Book Appointment"},
     "hero-btn2":{en:"Learn More"},
     "about-tag":{en:"About Me"},
@@ -671,10 +673,10 @@ var translations = {
     "st1-p":{en:"My postgraduate studies in Clinical Psychology were completed with distinction. The certification of my degree from New Hampshire, USA, confirms that my training meets the most current international academic standards."},
     "st2-h":{en:"The Power of Synthesis"},
     "st2-p":{en:"My specialization in both Cognitive Behavioral (practical, present-oriented) and Cognitive Analytic (focused on deeper relational patterns) therapy provides me with an extensive toolkit to respond precisely to your needs."},
-    "st3-h":{en:"Frontline Clinical Experience"},
-    "st3-p":{en:"My experience at Tzaneio Hospital and the Hellenic Centre for Mental Health (E.K.E.PS.Y.E.) exposed me to the full spectrum of psychopathology, building deep and resilient clinical judgment."},
-    "st4-h":{en:"Uncompromising Ethics"},
-    "st4-p":{en:"Therapy is sacred. My practice is strictly governed by the Psychologists' Code of Ethics, ensuring confidentiality, respect, and safety at every step."},
+    "st3-h":{en:"Clinical Experience"},
+    "st3-p":{en:"Through clinical practice at Tzaneio General Hospital, the Hellenic Centre for Mental Health & Research, and Roots Wellness Center, I came into contact with a broad spectrum of psychopathology, significantly strengthening my clinical judgment."},
+    "st4-h":{en:"Professional Ethics in Psychology"},
+    "st4-p":{en:"My practice is strictly governed by the Psychologists' Code of Ethics, ensuring confidentiality, respect, and safety at every step."},
     "diff-tag":{en:"Areas of Specialization"},
     "diff-title":{en:"Difficulties I Address"},
     "dt1":{en:"Anxiety"},
